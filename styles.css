@@ -150,6 +150,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  align-items: center;
 }
 
 .recipe-button,
@@ -185,6 +186,12 @@ h1 {
   background: var(--accent-soft);
   color: var(--accent-dark);
   box-shadow: 0 10px 20px rgba(255, 199, 143, 0.28);
+}
+
+.actions .copy-button {
+  min-width: 156px;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .copy-button:hover,
