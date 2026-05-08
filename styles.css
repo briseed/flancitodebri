@@ -148,7 +148,7 @@ h1 {
 
 .actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
   align-items: center;
 }
@@ -188,8 +188,9 @@ h1 {
   box-shadow: 0 10px 20px rgba(255, 199, 143, 0.28);
 }
 
+.actions .recipe-button,
 .actions .copy-button {
-  min-width: 156px;
+  min-width: 150px;
   white-space: nowrap;
   text-align: center;
 }
@@ -459,6 +460,10 @@ button:disabled {
 
   .card::before {
     inset: 12px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
   }
 
   .servings-controls {
