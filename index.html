@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receta de Flan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Coiny&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">LA COCINA CASERA DE BRISEED</p>
+          <h1>Tu flan casero, explicado paso a paso</h1>
+          <p class="intro">
+            Toca el boton y te acompano con una receta simple, rica y bien facil de seguir.
+          </p>
+
+          <div class="recipe-meta" aria-label="Datos de la receta">
+            <p class="meta-pill"><strong>Tiempo total:</strong> 1 h 15 min</p>
+            <p class="meta-pill"><strong>Dificultad:</strong> facil</p>
+          </div>
+
+          <div class="actions">
+            <button id="show-recipe" class="recipe-button" type="button">
+              Ver receta
+            </button>
+            <button id="copy-recipe" class="copy-button hidden" type="button">
+              Copiar receta
+            </button>
+            <button id="print-recipe" class="copy-button hidden" type="button">
+              Imprimir receta
+            </button>
+          </div>
+        </div>
+
+        <figure class="hero-image">
+          <img src="flan.webp" alt="Flan casero con caramelo">
+        </figure>
+      </div>
+
+      <section id="recipe-card" class="recipe hidden" aria-live="polite">
+        <div class="recipe-layout">
+          <div class="left-column">
+            <aside class="ingredients-panel">
+              <p class="section-label">Ingredientes</p>
+              <h2>Flan casero</h2>
+              <p class="servings-copy">
+                Esta receta esta pensada para <strong><span id="servings-count">4</span> porciones</strong>.
+              </p>
+              <div class="servings-controls">
+                <button id="decrease-servings" class="ghost-button" type="button">
+                  Menos porciones
+                </button>
+                <button id="increase-servings" class="secondary-button" type="button">
+                  Mas porciones
+                </button>
+              </div>
+              <ul class="ingredients-list">
+                <li><span id="eggs-amount">5</span> huevos</li>
+                <li><span id="milk-amount">500</span> ml de leche</li>
+                <li><span id="sugar-amount">150</span> g de azucar</li>
+                <li><span id="vanilla-amount">1</span> cucharadita de esencia de vainilla</li>
+                <li><span id="caramel-amount">100</span> g de azucar extra para el caramelo</li>
+              </ul>
+            </aside>
+
+            <section class="pairings-panel">
+              <p class="section-label">Queda bien con</p>
+              <h3>Para acompanar</h3>
+              <ul class="pairings-list">
+                <li>Crema</li>
+                <li>Dulce de leche</li>
+                <li>Coco rallado</li>
+                <li>Un cafecito</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="right-column">
+            <div class="steps-panel">
+              <p class="section-label">Modo paso a paso</p>
+              <div class="step-card" id="step-card">
+                <div class="step-topline">
+                  <p class="step-counter" id="step-counter">Paso 1 de 5</p>
+                </div>
+                <h3 id="step-title">Preparar el caramelo</h3>
+                <p id="step-text">
+                  Vamos con calma: derretir el azucar extra hasta formar caramelo y cubrir el molde.
+                </p>
+              </div>
+
+              <div class="step-actions">
+                <button id="next-step" class="secondary-button" type="button">
+                  Siguiente paso
+                </button>
+                <button id="restart-steps" class="ghost-button" type="button">
+                  Empezar de nuevo
+                </button>
+              </div>
+
+              <p id="final-message" class="final-message hidden">
+                Listo, ahora a disfrutarlo. Te va a quedar riquisimo.
+              </p>
+            </div>
+
+            <section class="tips-panel">
+              <p class="section-label">Tips utiles de cocina</p>
+              <h3>Pequenos trucos</h3>
+              <ul class="tips-list">
+                <li><strong>Para saber si esta listo:</strong> mueve apenas el molde. El centro debe temblar suave, pero no verse liquido.</li>
+                <li><strong>Para desmoldarlo sin romperlo:</strong> pasa un cuchillo fino por el borde y desmolda cuando ya este bien frio.</li>
+                <li><strong>Para enfriarlo bien:</strong> dejalo a temperatura ambiente primero y luego en la heladera al menos 3 horas.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <p class="recipe-note">Receta favorita de Briseed para tardes de antojo.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
